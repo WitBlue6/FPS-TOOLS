@@ -13,8 +13,10 @@
 ## 使用方法  
 ### 1.目标图片提供  
 在main.py中的img_enemies列表中append你想要识别的目标即可，若有视角差异可以提供多角度  
+
     img_enemies = []  
     img_enemies.append(cv2.imread('./swm.png'))  
+    
 ### 2.功能完善  
 可自行在keyboard监听中添加其他功能 
 
