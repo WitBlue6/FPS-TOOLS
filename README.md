@@ -2,7 +2,8 @@
 # FPS辅助工具 
 # （注：仅限单机游戏使用，请勿用于其他用途） 
 ## 说明  
-本项目参考了https://gitee.com/taylorandtony/swm-auto-toolg开发的沙威玛辅助工具，具有两项功能，需要自行提供目标图片，未使用YOLO等神经网络实现动态监测  
+本项目参考了https://gitee.com/taylorandtony/swm-auto-toolg  
+开发的沙威玛辅助工具，具有两项功能，需要自行提供目标图片，未使用YOLO等神经网络实现动态监测  
 ### 1.单目标瞄准  
 按住Ctrl键鼠标准心持续锁向识别到的目标，目标参考图片由自己提供。  
 ### 2.多目标连杀  
