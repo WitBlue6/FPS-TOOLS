@@ -1,5 +1,5 @@
 # FPS-TOOLS
-# FPS辅助工具 
+# FPS辅助自瞄脚本 
 # （注：仅限单机游戏使用，请勿用于其他用途） 
 ## 说明  
 本项目参考了https://gitee.com/taylorandtony/swm-auto-tool  
