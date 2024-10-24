@@ -15,7 +15,8 @@
 在main.py中的img_enemies列表中append你想要识别的目标即可，若有视角差异可以提供多角度  
 
     img_enemies = []  
-    img_enemies.append(cv2.imread('./swm.png'))  
+    img_enemies.append(cv2.imread('./enemy1.png'))  
+    img_enemies.append(cv2.imread('./enemy2.png'))  
     
 ### 2.功能完善  
 可自行在keyboard监听中添加其他功能 
