@@ -17,7 +17,9 @@
     img_enemies = []  
     img_enemies.append(cv2.imread('./enemy1.png'))  
     img_enemies.append(cv2.imread('./enemy2.png'))  
-    
+
+### 3.图片识别来源  
+当前默认为整个屏幕页面(1920x1080)，若需要更改参数，向功能函数中传入识别区域的左上(0, 0)和右下(1919, 1079)参数  
 ### 2.功能完善  
 可自行在keyboard监听中添加其他功能 
 
