@@ -9,9 +9,11 @@ from pynput import keyboard
 ctrl_pressed = False
 FIRE = False
 SINGLE = True
+MOUSE = False
 
 img_enemies = []
 img_enemies.append(cv2.imread('./swm.png'))
+img_enemies.append(cv2.imread('./1.png'))
 
 def aim_to_enemy(left_up=(0, 0), right_down=(1919, 1079), threshold=0.8, single=True, fire=False):
     """
@@ -31,11 +33,17 @@ def aim_to_enemy(left_up=(0, 0), right_down=(1919, 1079), threshold=0.8, single=
         centers = [(x + left_up[0], y + left_up[1]) for x, y in centers]
         if not single and fire:  # 向所有目标开火
             for center in centers:
-                shubiao.click(center)
+                if MOUSE:
+                    shubiao.click_fps(center)
+                else:
+                    shubiao.click(center)
                 sleep(0.3)
             return
         else:  # 只对单个目标进行瞄准
-            shubiao.move_to(centers[0])
+            if MOUSE:
+                shubiao.move_mouse(centers[0])
+            else:
+                shubiao.move_To(centers[0])
             return
 
 def aim_loop():
